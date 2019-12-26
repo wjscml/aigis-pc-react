@@ -1,0 +1,21 @@
+@import './neat.styl';
+@import './font.styl';
+@import './variable.styl';
+@import './loading.styl';
+html, body
+    height 100%
+    width: 100%
+    font-size 14px
+    background-color $color-background
+    color $color-text
+    .Admin
+        display: flex
+        height: 100vh
+        .main-wrap
+            overflow: auto
+            flex: 1
+            padding: 0 30px
+            &::-webkit-scrollbar
+                width: 4px
+            &::-webkit-scrollbar-thumb
+                background-color $color-light-purple

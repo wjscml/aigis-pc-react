@@ -1,0 +1,41 @@
+@import "../../common/style/variable"
+.report-detail-wrapper
+  .detail-header
+    border-bottom 1px solid $color-line
+    .title-box
+      line-height 30px
+      font-size 30px
+      font-weight 600
+      color $color-white
+    .issue-box
+      display flex
+      align-items center
+      height 60px
+      color $color-blue
+      .publish-time
+        margin-left 10px
+        color $color-search
+  .detail-main
+    margin 30px 0
+    font-size 15px
+    .abstract, .b-review
+      display none!important
+    .clearp, center
+      border none!important
+      background-color rgba(0, 0, 0, 0)!important
+    p
+      text-indent 30px
+      margin-bottom 16px
+      border none!important
+      background-color rgba(0, 0, 0, 0)!important
+      color $color-text!important
+      span
+        a
+          color $color-text!important
+      strong
+        text-indent 0
+  .notices
+    border-top 1px dashed $color-line
+    padding 10px 0
+
+    color $color-search

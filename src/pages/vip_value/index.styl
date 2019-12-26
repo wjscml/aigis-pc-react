@@ -1,0 +1,48 @@
+@import "../../common/style/variable"
+.vip-value-wrapper
+  min-width 774px
+  .vip-value-nav
+    margin-bottom 30px
+    .row-nav
+      display flex
+      justify-content center
+  .vip-value-content
+    padding 4px 0
+    border-radius 12px
+    background-color $color-light-background
+    .value-subNav
+      display flex
+      align-items center
+      height 52px
+      padding 0 30px
+      border-bottom 1px solid $color-line
+      .subNav-btn
+        width 56px
+        margin-right 36px
+        &.subNav-btn-s
+          font-weight 600
+          color $color-white
+    .value-chart
+      margin 40px 30px
+    .value-info
+      display flex
+      justify-content space-between
+      margin 40px 30px
+      .item
+        span
+          display block
+        .value
+          font-weight 600
+          line-height 18px
+          font-size 18px
+          color $color-white
+        .red
+          color $color-red
+        .green
+          color $color-green
+        .name
+          margin-top 10px
+          line-height 14px
+        &:nth-child(2),&:nth-child(4)
+          .red,.green
+            color $color-white

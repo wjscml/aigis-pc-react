@@ -1,0 +1,25 @@
+.index-wrapper
+    display flex
+    justify-content space-between
+    .index-left
+        flex 2
+        margin-right: 30px
+        .index-algorithm
+            .charts-column
+                width calc(50% - 13px)
+                &:nth-child(1)
+                    width calc(100%)
+                    min-width 650px
+                    .info
+                        p
+                            span
+                                float right
+                                &.label
+                                    margin-right 20px
+                                    margin-top 16px
+        .index-news
+            margin-top 24px
+            min-width 650px
+    .index-right
+        flex 1
+        min-width 380px

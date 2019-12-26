@@ -1,0 +1,111 @@
+@import "../../common/style/variable.styl"
+.flex-container
+  position fixed
+  top 0
+  bottom 0
+  left 0
+  right 0
+  canvas
+    width 100%
+    height: auto
+    display: inline-block
+    vertical-align: baseline
+    position: absolute
+    z-index: -1
+  .canvaszz
+    width: 100%
+    background: url(./bj.jpg) no-repeat center
+    // height: 640px
+    position: absolute
+    z-index: 10
+    filter: opacity(40%)
+    opacity: 0.4
+  .login-main
+    display flex
+    flex-direction column
+    position absolute
+    left 50%
+    top 0
+    bottom 0
+    z-index: 11
+    width 450px
+    margin-left -225px
+    text-align center
+    .login-top
+      margin 100px 0
+      color $color-white
+      .logo
+        margin-bottom 18px
+        .icon-logo
+          font-size 80px
+      .name
+        line-height 18px
+        font-size 18px
+    .login-wrapper
+      flex 1
+      position relative
+      .tips-wrapper
+        position absolute
+        top -50px
+        left 0
+        line-height 40px
+        height 40px
+        width 100%
+        border-radius 4px
+        background-color $color-red
+        color $color-white
+        &.correct
+          background-color $color-green
+      .input-wrapper     
+        position relative
+        input
+          height 50px
+          padding 0 30px
+          border-radius 4px
+          font-size: 16px
+          background-color $color-light-background
+          color $color-white
+          caret-color $color-light-blue
+          outline none
+          border none    
+        .imgCode
+            position absolute
+            top 1px
+            right 4px
+            height 48px
+            cursor pointer
+        .text
+            position absolute
+            top 0
+            right 30px
+            line-height: 50px
+            height 50px
+            color: $color-white
+            background-color: $color-light-background
+            .send-code
+              cursor: pointer
+              &:hover
+                  color $color-light-blue
+      .submit-upper
+          display flex
+          justify-content space-between
+          align-items center
+          padding 0 30px
+          height 40px
+          .link
+              color $color-white
+              outline: none
+              &:hover
+                  color $color-light-blue
+                  cursor pointer
+      .submit-btn
+          width 100%
+          line-height 50px
+          height 50px
+          font-size 16px
+          border-radius 4px
+          background-color $color-blue
+          color $color-white
+          cursor pointer
+    .copyright
+      margin-bottom 40px

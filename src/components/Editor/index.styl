@@ -1,0 +1,28 @@
+@import "../../common/style/variable"
+.editor  
+    .w-e-toolbar
+        border: none!important
+        background-color $color-line!important
+        .w-e-menu
+            i
+                color $color-search
+            &:hover
+                i
+                    color $color-light-blue
+    .w-e-text-container
+        height auto!important
+        border: none!important
+        color $color-light-background
+        .w-e-text
+            background-color $color-white
+            min-height 100px
+    .editor-submit
+        margin-top 6px
+        width 100px
+        line-height 24px
+        border none
+        background-color $color-blue
+        color $color-nav-text
+        outline: none
+        &:hover
+            background-color $color-dark-blue

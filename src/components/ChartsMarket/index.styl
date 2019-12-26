@@ -1,0 +1,60 @@
+@import "../../common/style/variable"
+.charts-market
+  .charts-column
+    border-radius 10px
+    background-color $color-blue
+    &:nth-child(even)
+      background-color $color-purple
+      .column-title
+        .layer_menu_list
+          background-color $color-purple
+    .column-wrapper
+      display block
+      padding 24px 20px
+      margin-bottom 26px
+      .column-title
+        position relative
+        display flex
+        align-items center
+        margin-bottom 24px
+        height 24px
+        color #fff
+        .icon-ignore
+          margin-right 8px
+          color $color-light-blue
+        .name
+          flex 1
+          cursor pointer
+        .icon-more
+          margin-left 30px
+          font-size 16px
+          cursor pointer
+          &:hover
+            color $color-light-blue
+        .layer_menu_list
+          position absolute
+          right 0
+          top 24px
+          z-index 10
+          background $color-blue
+          border-radius 4px
+          box-shadow: 0 0 3px $color-background
+          display none
+          ul
+            padding 6px 0
+            li
+              display block
+              padding 0 20px
+              line-height 28px
+              color $color-white
+              cursor pointer
+              &:hover
+                background-color $color-dark-blue
+        .mask
+          position fixed
+          top 0
+          bottom 0
+          left 0
+          right 0
+          z-index 9
+          display none

@@ -1,0 +1,43 @@
+@import '../../common/style/variable.styl'
+.left-wrap
+  .logo
+    display flex
+    justify-content: center
+    align-items: center
+    height 80px
+    cursor pointer
+    outline none
+    .icon-logo
+      font-size 30px
+      color #fff
+  .nav-wrapper
+      margin-left 30px
+      .nav
+        display block
+        margin-top 12px
+        &:nth-child(5):before
+          content: '定制服务'
+          display block
+          margin-left 24px
+          padding 46px 0 24px 0
+          color $color-nav-text
+        
+        .navBtn
+          display flex
+          align-items center
+          width 155px
+          height 32px
+          border-radius 4px
+          outline: none
+          .icon
+            margin 0 24px
+            font-size 18px
+            color $color-icon
+          .title
+            color $color-nav-text
+          &.navBtn-s
+            background-color $color-blue
+            .icon
+              color #fff
+            .title
+              color #fff

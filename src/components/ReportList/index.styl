@@ -1,0 +1,73 @@
+@import "../../common/style/variable"
+.report-column-content
+  .report-column-time
+    display flex
+    justify-content center
+    margin-bottom 30px
+    .title
+      display flex
+      align-items center
+      justify-content center
+      width 120px
+      height 32px
+      border-radius 16px
+      color $color-white
+      background-color $color-blue
+  .report-column-main
+    display flex
+    flex-wrap: wrap
+    .column
+      margin 0 13px 26px 13px
+      padding 20px 24px
+      width calc(50% - 26px)   
+      border-radius 12px
+      background-color $color-light-background
+      .title
+        margin-bottom 16px
+        line-height 24px
+        font-size 16px
+        font-weight 600
+        color $color-white
+        cursor pointer
+        &:hover
+          color $color-light-blue
+      .content
+        overflow hidden
+        position relative
+        .image
+          float left
+          width 38.8%
+          height 0
+          padding-top 25%
+          background-repeat  no-repeat
+          background-position left center
+          background-size cover
+        .summary
+          float left
+          box-sizing border-box
+          padding-left 18px
+          width 61.2%
+          .text
+            line-height 20px
+            display: -webkit-box
+            -webkit-line-clamp: 3
+            -webkit-box-orient: vertical
+            overflow: hidden
+          @media screen and (max-width: 1048px) and (min-width: 850px)
+            .text
+              -webkit-line-clamp: 5
+        .enter
+          position absolute
+          left calc(38.8% + 18px)
+          bottom 0
+          color $color-light-blue
+          &:hover
+            cursor pointer
+            text-decoration underline
+        .time
+          position absolute
+          right 0
+          bottom 0
+.loadmore-wrap
+  margin 20px 0
+  text-align center

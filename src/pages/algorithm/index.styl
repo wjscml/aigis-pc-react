@@ -1,0 +1,18 @@
+.algorithm-wrapper
+  .algorithm-nav
+    display flex
+    justify-content center
+    margin-bottom 30px
+    .row-nav
+      .nav-btn
+        width 100px
+  .charts-algo
+    .charts-column
+        width calc(50% - 13px)     
+    @media screen and (min-width: 1270px)
+      .charts-column
+        width calc(33.3% - 18px)
+    @media screen and (max-width: 920px)
+      .charts-column
+        width calc(100%)
+        min-width 346px
